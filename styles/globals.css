@@ -62,9 +62,9 @@
     @apply grid justify-items-center items-center;
   }
   .NavLink {
-    @apply font-popping font-semibold text-tiny md:text-base lg:text-lg text-white tracking-wider transform hover:-translate-y-1 duration-300;
+    @apply font-popping font-semibold text-sm md:text-tiny lg:text-base text-white tracking-wider transform hover:-translate-y-1 duration-300 hover:drop-shadow cursor-pointer;
   }
   .Hover {
-    @apply transform hover:-translate-y-1 duration-300;
+    @apply cursor-pointer transform hover:-translate-y-1 duration-300;
   }
 }

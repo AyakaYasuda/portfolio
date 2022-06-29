@@ -21,10 +21,10 @@ const Layout = ({ children }) => {
     <>
       <header className="GridCenter grid-cols-3 bg-blue-light px-10 py-6">
         <ul className="FlexJustifyStart gap-2 justify-self-start">
-          <li>
+          <li className="Hover">
             <GitHubIcon sx={{ color: '#FFBF69', fontSize: 35 }} />
           </li>
-          <li>
+          <li className="Hover">
             <LinkedInIcon sx={{ color: '#FFBF69', fontSize: 35 }} />
           </li>
         </ul>
@@ -38,11 +38,15 @@ const Layout = ({ children }) => {
   );
 
   return (
-    <>
-      <div className="block md:hidden">{mobileHeader}</div>
-      <div className="hidden md:block">{desktopHeader}</div>
+    <div className="relative">
+      <div className="fixed top-0 left-0 right-0 block md:hidden">
+        {mobileHeader}
+      </div>
+      <div className="fixed top-0 left-0 right-0 hidden md:block">
+        {desktopHeader}
+      </div>
       <main>{children}</main>
-    </>
+    </div>
   );
 };
 
