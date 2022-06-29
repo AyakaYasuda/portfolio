@@ -45,7 +45,7 @@ const Layout = ({ children }) => {
       <div className="fixed top-0 left-0 right-0 hidden md:block">
         {desktopHeader}
       </div>
-      <main>{children}</main>
+      <main className="relative top-40 md:top-44 lg:top-48">{children}</main>
     </div>
   );
 };

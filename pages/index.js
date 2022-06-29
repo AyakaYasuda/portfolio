@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Home from '../components/Home';
 
 const HomePage = () => {
   return (
@@ -14,6 +15,7 @@ const HomePage = () => {
           content="Ayaka Yasuda is a software developer who specializes in developing web applications with React and Node.js. Based in Vancouver."
         />
       </Head>
+      <Home />
     </>
   );
 };

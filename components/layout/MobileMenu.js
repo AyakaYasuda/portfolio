@@ -8,7 +8,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 const MobileMenu = () => {
   return (
-    <nav className="GridCenter grid-cols-2 bg-green-dark py-3 px-5">
+    <nav className="GridCenter grid-cols-2 bg-green-dark py-2 px-5">
       <ul className="FlexJustifyStart gap-2 justify-self-start">
         <li className="Hover">
           <GitHubIcon sx={{ color: '#FFFFFF', fontSize: 22 }} />
