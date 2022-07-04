@@ -18,11 +18,11 @@
   }
 
   h2 {
-    @apply font-playfair font-bold text-4xl md:text-5xl;
+    @apply font-playfair font-bold text-4xl md:text-5xl lg:text-6xl;
   }
 
   h3 {
-    @apply font-playfair font-bold text-2xl md:text-3xl;
+    @apply font-playfair font-bold text-2xl md:text-4xl xl:text-5xl;
   }
 
   h4 {
@@ -72,6 +72,9 @@
     @apply cursor-pointer transform hover:-translate-y-1 duration-300;
   }
   .UnderLine {
-    @apply bg-gradient-to-t from-pink-light via-transparent;
+    @apply bg-gradient-to-t from-pink-light via-transparent max-w-max;
+  }
+  .Triangle {
+    @apply w-0 h-0 border border-l-white border-r-white border-t-black;
   }
 }
