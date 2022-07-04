@@ -1,6 +1,8 @@
 import React from 'react';
 import classes from './Home.module.css';
 
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+
 const Home = ({ data }) => {
   return (
     <>
@@ -18,12 +20,18 @@ const Home = ({ data }) => {
               <h3 className={classes.underline}>{data.aboutLine2}</h3>
             </div>
           </div>
-          <h5 className="absolute z-20 bottom-5 right-1/2 translate-x-1/2 text-white text-center w-max md:bottom-16">
+          <h5 className="absolute z-20 bottom-10 right-1/2 translate-x-1/2 text-white text-center w-max md:bottom-16">
             Check out what I've been working on
           </h5>
-          <button className="absolute z-20">
-            <div className="Triangle" />
-          </button>
+          {/* FIXME: use Link instead of div tag */}
+          <div className="absolute z-20 right-1/2 translate-x-1/2 -bottom-5 bg-orange rounded-full">
+            <ArrowDropDownIcon
+              sx={{
+                color: '#FFFFFF',
+                fontSize: 40,
+              }}
+            />
+          </div>
         </section>
       </div>
     </>

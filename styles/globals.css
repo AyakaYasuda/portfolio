@@ -74,7 +74,5 @@
   .UnderLine {
     @apply bg-gradient-to-t from-pink-light via-transparent max-w-max;
   }
-  .Triangle {
-    @apply w-0 h-0 border border-l-white border-r-white border-t-black;
-  }
+  
 }
