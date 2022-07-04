@@ -11,7 +11,7 @@ const Layout = ({ children }) => {
     <>
       <header className="FlexColumn bg-blue-light px-10 py-6">
         <h1 className="text-orange">Ayaka Yasuda</h1>
-        <h4 className="text-orange font-normal">Software Developer</h4>
+        <h5 className="text-orange font-normal">Software Developer</h5>
       </header>
       <MobileMenu />
     </>
@@ -22,15 +22,27 @@ const Layout = ({ children }) => {
       <header className="GridCenter grid-cols-3 bg-blue-light px-10 py-6">
         <ul className="FlexJustifyStart gap-2 justify-self-start">
           <li className="Hover">
-            <GitHubIcon sx={{ color: '#FFBF69', fontSize: 35 }} />
+            <a
+              href="https://github.com/AyakaYasuda"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <GitHubIcon sx={{ color: '#FFBF69', fontSize: 35 }} />
+            </a>
           </li>
           <li className="Hover">
-            <LinkedInIcon sx={{ color: '#FFBF69', fontSize: 35 }} />
+            <a
+              href="https://www.linkedin.com/in/ayaka-yasuda-7ab597197"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <LinkedInIcon sx={{ color: '#FFBF69', fontSize: 35 }} />
+            </a>
           </li>
         </ul>
         <div className="FlexColumn">
           <h1 className="text-orange">Ayaka Yasuda</h1>
-          <h4 className="text-orange font-normal">Software Developer</h4>
+          <h5 className="text-orange font-normal">Software Developer</h5>
         </div>
       </header>
       <DesktopMenu />
@@ -38,14 +50,14 @@ const Layout = ({ children }) => {
   );
 
   return (
-    <div className="relative">
-      <div className="fixed top-0 left-0 right-0 block md:hidden">
+    <div className="relative min-h-screen w-screen">
+      <div className="fixed top-0 left-0 right-0 block md:hidden z-10">
         {mobileHeader}
       </div>
-      <div className="fixed top-0 left-0 right-0 hidden md:block">
+      <div className="fixed top-0 left-0 right-0 hidden md:block z-10">
         {desktopHeader}
       </div>
-      <main className="relative top-40 md:top-44 lg:top-48">{children}</main>
+      <main className="z-0">{children}</main>
     </div>
   );
 };

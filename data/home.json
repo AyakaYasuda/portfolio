@@ -1,0 +1,6 @@
+{
+  "topImage": "/images/TopImage.png",
+  "greeting": "Hello, I'm Ayaka!",
+  "aboutLine1": "I develop software applications",
+  "aboutLine2": "with React and Node.js"
+}
