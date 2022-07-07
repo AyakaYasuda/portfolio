@@ -1,0 +1,5 @@
+.underline {
+  background: linear-gradient(transparent 40%, #f5cac3 60%);
+  color: #5b4f5c;
+  max-width: max-content;
+}

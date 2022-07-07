@@ -1,0 +1,50 @@
+{
+  "profileImage": "/images/ProfileImage.png",
+  "profilePara1": "I'm a software developer based in Vancouver. My passion is not only implementing frontend features but also expanding my knowledge in backend development through combining apps with RESTful APIs and databases.",
+  "profilePara2": "Ever since I started designing systems in my career and teaching myself programming, I've been obsessed with the feeling when I see the app working as planned after dealing with problems step by step. I love the idea that there's more yet to learn and update in the software development industry, which I believe leads to my self-growth consistently.",
+  "mySkills": [
+    {
+      "id": 1,
+      "category": "Languages",
+      "skills": [
+        "JavaScript + Node.js",
+        "TypeScript",
+        "SQL",
+        "HTML",
+        "CSS",
+        "SASS/SCSS"
+      ]
+    },
+    {
+      "id": 2,
+      "category": "Frameworks / Libraries",
+      "skills": [
+        "React",
+        "Redux",
+        "Redux Toolkit",
+        "Next.js",
+        "Express",
+        "Tailwind CSS",
+        "Material UI"
+      ]
+    },
+    {
+      "id": 3,
+      "category": "Databases",
+      "skills": ["PostgreSQL", "MongoDB", "AWS DynamoDB"]
+    },
+    {
+      "id": 4,
+      "category": "Others",
+      "skills": [
+        "AWS lambda",
+        "AWS API Gateway",
+        "Firebase",
+        "Heroku",
+        "Git",
+        "GitHub",
+        "Bitbucket"
+      ]
+    }
+  ]
+}
