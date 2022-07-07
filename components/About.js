@@ -1,8 +1,9 @@
 import React from 'react';
+import BackgroundBox from './ui/BackgroundBox';
 
 const About = ({ data }) => {
   return (
-    <div className="relative grid grid-cols-1 md:grid-cols-2 mt-60 md:mt-10 md:mx-28">
+    <div className="relative grid grid-cols-1 md:grid-cols-2 mt-60 md:mt-16 md:mx-20 lg:md-28 md:gap-8">
       <section className="py-16 px-8">
         <h3 className="text-brown text-left">About ME</h3>
         <div>
@@ -29,11 +30,12 @@ const About = ({ data }) => {
           ))}
         </div>
       </section>
-      <section className="py-16 px-8">
+      <section className="relative mx-16 md:my-10">
+        <BackgroundBox bgColor='bg-pink-light' width="w-full md:w-4/5" height="h-[40vw]" position="absolute z-0 top-5 left-0 md:left-3" />
         <img
           src={data.profileImage}
           alt="profile image"
-          className="w-[60vw] md:w-[28vw] h-auto m-auto"
+          className="absolute object-cover w-1/2 md:w-4/5 z-10 h-auto right-0 top-0 md:top-16 md:right-1/2 md:translate-x-1/2"
         />
       </section>
     </div>

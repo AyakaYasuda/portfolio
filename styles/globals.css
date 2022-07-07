@@ -62,6 +62,9 @@
   .FlexJustifyStart {
     @apply flex justify-start;
   }
+  .FlexJustifyEnd {
+    @apply flex justify-end;
+  }
   .GridCenter {
     @apply grid justify-items-center items-center;
   }
