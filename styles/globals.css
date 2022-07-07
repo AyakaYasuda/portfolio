@@ -74,5 +74,4 @@
   .UnderLine {
     @apply bg-gradient-to-t from-pink-light via-transparent max-w-max;
   }
-  
 }

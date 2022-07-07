@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Home from '../components/Home';
-import { getHomeData } from '../services';
+import About from '../components/About';
+import { getAboutData, getHomeData } from '../services';
 
 const HomePage = (props) => {
   return (
@@ -17,16 +18,19 @@ const HomePage = (props) => {
         />
       </Head>
       <Home data={props.home} />
+      <About data={props.about} />
     </>
   );
 };
 
 export const getStaticProps = async () => {
   const homeData = await getHomeData();
+  const aboutData = await getAboutData();
 
   return {
     props: {
       home: homeData,
+      about: aboutData,
     },
   };
 };
