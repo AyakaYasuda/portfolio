@@ -3,8 +3,8 @@ import BackgroundBox from './ui/BackgroundBox';
 
 const About = ({ data }) => {
   return (
-    <div className="relative grid grid-cols-1 md:grid-cols-2 mt-60 md:mt-16 md:mx-20 lg:md-28 md:gap-8">
-      <section className="py-16 px-8">
+    <div className="relative grid grid-cols-1 md:grid-cols-2 my-60 md:my-16 md:mx-20 lg:md-28 md:gap-8">
+      <section className="pt-16 pb-8 px-8">
         <h3 className="text-brown text-left">About ME</h3>
         <div>
           <p className="text-brown pt-5">{data.profilePara1}</p>
@@ -30,12 +30,23 @@ const About = ({ data }) => {
           ))}
         </div>
       </section>
-      <section className="relative mx-16 md:my-10">
-        <BackgroundBox bgColor='bg-pink-light' width="w-full md:w-4/5" height="h-[40vw]" position="absolute z-0 top-5 left-0 md:left-3" />
+      <section className="relative mx-16 md:my-10 h-[48vw]">
+        <BackgroundBox
+          bgColor="bg-pink-light"
+          width="w-10/12 md:w-4/5"
+          height="h-4/5"
+          position="absolute z-0 top-5 right-0 md:left-3"
+        />
+        <BackgroundBox
+          bgColor="bg-orange"
+          width="w-11/12"
+          height="h-[30vw] md:h-[12vw]"
+          position="absolute z-10 bottom-0 -right-20 md:bottom-16 md:-right-16"
+        />
         <img
           src={data.profileImage}
           alt="profile image"
-          className="absolute object-cover w-1/2 md:w-4/5 z-10 h-auto right-0 top-0 md:top-16 md:right-1/2 md:translate-x-1/2"
+          className="absolute object-cover w-1/2 md:w-4/5 z-20 h-auto right-0 top-0 md:top-16 md:right-1/2 md:translate-x-1/2"
         />
       </section>
     </div>
