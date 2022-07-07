@@ -50,14 +50,14 @@ const Layout = ({ children }) => {
   );
 
   return (
-    <div className="relative min-h-screen w-screen">
+    <div className="relative h-screen w-screen">
       <div className="fixed top-0 left-0 right-0 block md:hidden z-10">
         {mobileHeader}
       </div>
       <div className="fixed top-0 left-0 right-0 hidden md:block z-10">
         {desktopHeader}
       </div>
-      <main className="z-0">{children}</main>
+      <main className="z-0 h-full w-screen relative top-36 lg:top-44">{children}</main>
     </div>
   );
 };
