@@ -29,6 +29,13 @@ const About = ({ data }) => {
           ))}
         </div>
       </section>
+      <section className="py-16 px-8">
+        <img
+          src={data.profileImage}
+          alt="profile image"
+          className="w-[60vw] md:w-[28vw] h-auto m-auto"
+        />
+      </section>
     </div>
   );
 };

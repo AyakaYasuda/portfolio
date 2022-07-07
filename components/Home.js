@@ -1,6 +1,7 @@
 import React from 'react';
 import classes from './Home.module.css';
 
+import ScrollButton from './ui/ScrollButton';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
 const Home = ({ data }) => {
@@ -22,15 +23,7 @@ const Home = ({ data }) => {
         <h5 className="absolute z-20 bottom-10 right-1/2 translate-x-1/2 text-white text-center w-max md:bottom-16">
           Check out what I've been working on
         </h5>
-        {/* FIXME: use Link instead of div tag */}
-        <div className="absolute animate-bounce z-20 right-1/2 translate-x-1/2 -bottom-5 bg-orange rounded-full">
-          <ArrowDropDownIcon
-            sx={{
-              color: '#FFFFFF',
-              fontSize: 40,
-            }}
-          />
-        </div>
+        <ScrollButton className="absolute z-20 right-1/2 translate-x-1/2 -bottom-5" />
       </section>
     </div>
   );
