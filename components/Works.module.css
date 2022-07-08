@@ -1,0 +1,9 @@
+.bgHalf {
+  background: linear-gradient(
+    to bottom,
+    #bee3db 0%,
+    #bee3db 50%,
+    #FFFFFF 50%,
+    #FFFFFF 100%
+  );
+}

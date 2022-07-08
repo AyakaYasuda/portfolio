@@ -2,7 +2,6 @@ import React from 'react';
 import classes from './Home.module.css';
 
 import ScrollButton from './ui/ScrollButton';
-import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
 const Home = ({ data }) => {
   return (
