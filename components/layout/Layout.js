@@ -9,7 +9,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 const Layout = ({ children }) => {
   const mobileHeader = (
     <>
-      <header className="FlexColumn bg-blue-light px-10 py-6">
+      <header className="FlexColumn bg-blue-light px-10 py-2">
         <h1 className="text-orange">Ayaka Yasuda</h1>
         <h5 className="text-orange font-normal">Software Developer</h5>
       </header>
@@ -19,7 +19,7 @@ const Layout = ({ children }) => {
 
   const desktopHeader = (
     <>
-      <header className="GridCenter grid-cols-3 bg-blue-light px-10 py-6">
+      <header className="GridCenter grid-cols-3 bg-blue-light px-10 py-2">
         <ul className="FlexJustifyStart gap-2 justify-self-start">
           <li className="Hover">
             <a
@@ -57,7 +57,7 @@ const Layout = ({ children }) => {
       <div className="fixed top-0 left-0 right-0 hidden md:block z-10">
         {desktopHeader}
       </div>
-      <main className="z-0 h-full w-screen relative top-36 lg:top-44">
+      <main className="z-0 h-full w-screen relative top-28 lg:top-36">
         {children}
       </main>
     </div>
