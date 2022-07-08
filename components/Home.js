@@ -28,6 +28,7 @@ const Home = ({ data }) => {
         <ScrollButton
           className="absolute z-20 right-1/2 translate-x-1/2 -bottom-5"
           path="works"
+          offSet={-130}
         />
       </section>
     </div>

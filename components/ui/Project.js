@@ -13,7 +13,7 @@ const Project = ({
   technologies,
 }) => {
   const mobileContent = (
-    <div className="w-full GridCenter grid-cols-1 mb-10">
+    <div className="w-full GridCenter grid-cols-1">
       <section className="justify-self-end mb-5">
         <h5 className="text-white text-right">
           {`Project - ${('0' + id).slice(-2)}`}
@@ -43,7 +43,7 @@ const Project = ({
   );
 
   const desktopContent = (
-    <div className="w-full GridCenter grid-cols-2 mb-32">
+    <div className="w-full GridCenter grid-cols-2">
       <ProjectImage image={projectImage} />
       <section className="relative FlexColumn">
         <div className="self-end mb-5">
