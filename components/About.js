@@ -3,7 +3,7 @@ import ProfileImage from './ui/ProfileImage';
 
 const About = ({ data }) => {
   return (
-    <div className="relative grid grid-cols-1 md:grid-cols-2 mt-60 mb-16 md:my-16 md:mx-20 lg:md-28 md:gap-8 overflow-x-hidden">
+    <div id="about" className="relative grid grid-cols-1 md:grid-cols-2 mt-60 mb-16 md:my-16 md:mx-20 lg:md-28 md:gap-8 overflow-x-hidden">
       <section className="pt-16 pb-8 px-8">
         <h3 className="text-brown text-left">About ME</h3>
         <div>

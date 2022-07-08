@@ -5,7 +5,6 @@ import DownloadIcon from '@mui/icons-material/Download';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
-
 const MobileMenu = () => {
   return (
     <nav className="GridCenter grid-cols-2 bg-green-dark py-2 px-5">
