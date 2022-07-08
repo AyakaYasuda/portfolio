@@ -13,7 +13,16 @@ const Works = ({ data }) => {
       </h3>
       <div className="h-4/5 overflow-y-auto">
         {data.map((work) => (
-          <Project key={work.id} project={work} />
+          <Project
+            key={work.id}
+            id={work.id}
+            url={work.url}
+            github={work.github}
+            projectImage={work.projectImage}
+            name={work.name}
+            description={work.description}
+            technologies={work.technologies}
+          />
         ))}
       </div>
     </div>
