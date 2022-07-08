@@ -59,11 +59,6 @@ const Layout = ({ children }) => {
       </div>
       <main className="z-0 h-full w-screen relative top-36 lg:top-44">
         {children}
-        <footer>
-          <p className="text-brown text-center py-5">
-            &copy; Ayaka Yasuda 2022. All Rights Reserved.
-          </p>
-        </footer>
       </main>
     </div>
   );
