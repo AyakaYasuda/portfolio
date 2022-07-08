@@ -57,7 +57,14 @@ const Layout = ({ children }) => {
       <div className="fixed top-0 left-0 right-0 hidden md:block z-10">
         {desktopHeader}
       </div>
-      <main className="z-0 h-full w-screen relative top-36 lg:top-44">{children}</main>
+      <main className="z-0 h-full w-screen relative top-36 lg:top-44">
+        {children}
+        <footer>
+          <p className="text-brown text-center py-5">
+            &copy; Ayaka Yasuda 2022. All Rights Reserved.
+          </p>
+        </footer>
+      </main>
     </div>
   );
 };
