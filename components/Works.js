@@ -4,14 +4,19 @@ import classes from './Works.module.css';
 import Project from './ui/Project';
 import ScrollButton from './ui/ScrollButton';
 
-const Works = ({ data }) => {
-  const scrollToNext = () => {
-    const element = document.getElementById('projectsWindow');
-    const height = element.clientHeight;
+const scrollToNext = (id) => {
+  const element = document.getElementById('projectsWindow');
+  const nextElement = document.getElementById(`project-${id + 1}`);
+  const rect = nextElement.getBoundingClientRect();
+  const position = rect.top;
+  console.log(position);
 
-    if (element) {
-      element.scrollBy({ top: height, behavior: 'smooth' });
-    }
+  element.scrollBy(0, position);
+};
+
+const Works = ({ data }) => {
+  const scrollHandler = (id) => {
+    scrollToNext(id);
   };
 
   return (
@@ -22,12 +27,12 @@ const Works = ({ data }) => {
       <h3 className="text-brown text-center mb-8 md:mb-16">
         Things I have been working on
       </h3>
-      <div id="projectsWindow" className="h-[92%] md:h-[90%] overflow-y-auto">
+      <div id="projectsWindow" className="h-[92%] md:h-[92%] overflow-y-auto">
         {data.map((work, index) => (
           <div
             id={`project-${work.id}`}
             key={work.id}
-            className="mb-10 md:mb-32"
+            className="mb-10 md:mb-20"
           >
             <Project
               id={work.id}
@@ -39,9 +44,9 @@ const Works = ({ data }) => {
               technologies={work.technologies}
             />
             {index !== data.length - 1 && (
-              <div className="FlexColumn gap-5 mt-3">
+              <div className="FlexColumn gap-5 my-16">
                 <h5 className="text-brown">Next Project</h5>
-                <ScrollButton onClick={scrollToNext} />
+                <ScrollButton onClick={() => scrollHandler(work.id)} />
               </div>
             )}
           </div>
