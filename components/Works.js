@@ -5,11 +5,12 @@ import Project from './ui/Project';
 import ScrollButton from './ui/ScrollButton';
 
 const Works = ({ data }) => {
-  
   const scrollToNext = () => {
     const element = document.getElementById('projectsWindow');
+    const height = element.clientHeight;
+
     if (element) {
-      element.scrollTo({ top: 1000, behavior: 'smooth' });
+      element.scrollBy({ top: height, behavior: 'smooth' });
     }
   };
 
