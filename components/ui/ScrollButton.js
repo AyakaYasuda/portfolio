@@ -1,18 +1,27 @@
 import React from 'react';
+import { Link as Scroll } from 'react-scroll';
 
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
-const ScrollButton = ({ className, path }) => {
+const ScrollButton = ({ className, path, offSet, onClick }) => {
   return (
-    /* FIXME: use Link instead of div tag */
-    <div className={`bg-orange rounded-full animate-bounce ${className}`}>
+    <Scroll
+      to={path ? path : ""}
+      smooth={true}
+      duration={600}
+      offset={offSet ? offSet : null}
+      className={`bg-orange rounded-full animate-bounce cursor-pointer ${
+        className ? className : ''
+      }`}
+      onClick={onClick ? onClick : null}
+    >
       <ArrowDropDownIcon
         sx={{
           color: '#FFFFFF',
           fontSize: 40,
         }}
       />
-    </div>
+    </Scroll>
   );
 };
 

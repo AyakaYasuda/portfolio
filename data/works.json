@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "url": "https://juno-wedding.vercel.app",
+    "github": "https://github.com/AyakaYasuda/juno",
+    "projectImage": "/images/JunoImage.png", 
+    "name": "Juno",
+    "description": "Full-stack app that allows users to create wedding invitations and manage RSVPs aiming to effortless organizing the event. One of the most challenging parts on this project was designing the database prior to beginning the project and building the serverless architecture utilizing AWS services.",
+    "technologies": [
+      "React",
+      "Redux-Toolkit",
+      "TypeScript",
+      "TailwindCSS",
+      "Figma",
+      "AWS lambda",
+      "AWS API Gateway",
+      "AWS DynamoDB",
+      "Swagger",
+      "Serverless Framework"
+    ]
+  },
+  {
+    "id": 2,
+    "url": "https://midpj-flashcard-app.herokuapp.com",
+    "github": "https://github.com/AyakaYasuda/flash",
+    "projectImage": "/images/FlashImage.png", 
+    "name": "Flash",
+    "description": "This app promotes studying by helping users memorize new words. On this project, I aimed to deep-understand how to work with React Hooks such as State Hook and Effect Hook, and also Context API so that I would feel comfortable in managing state in the app.",
+    "technologies": [
+      "React",
+      "React Hooks",
+      "TailwindCSS",
+      "Firebase Realtime Database",
+      "Heroku",
+      "Github Actions"
+    ]
+  }
+]

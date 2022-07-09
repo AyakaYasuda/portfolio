@@ -2,11 +2,13 @@ import React from 'react';
 import classes from './Home.module.css';
 
 import ScrollButton from './ui/ScrollButton';
-import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
 const Home = ({ data }) => {
   return (
-    <div className="relative z-0 w-full h-2/4 md:h-[60vw] md:GridCenter md:grid-cols-2">
+    <div
+      id="home"
+      className="relative z-0 w-full h-2/4 md:h-[60vw] md:GridCenter md:grid-cols-2"
+    >
       <img
         src={data.topImage}
         alt="top image"
@@ -23,7 +25,11 @@ const Home = ({ data }) => {
         <h5 className="absolute z-20 bottom-10 right-1/2 translate-x-1/2 text-white text-center w-max md:bottom-16">
           Check out what I've been working on
         </h5>
-        <ScrollButton className="absolute z-20 right-1/2 translate-x-1/2 -bottom-5" />
+        <ScrollButton
+          className="absolute z-20 right-1/2 translate-x-1/2 -bottom-5"
+          path="works"
+          offSet={-130}
+        />
       </section>
     </div>
   );
