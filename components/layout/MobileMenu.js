@@ -11,10 +11,14 @@ const MobileMenu = ({ drawerState, onToggle }) => {
       <nav className="GridCenter grid-cols-2 bg-green-dark py-2 px-5">
         <ul className="FlexJustifyStart gap-2 justify-self-start">
           <li className="Hover">
-            <GitHubIcon sx={{ color: '#FFFFFF', fontSize: 22 }} />
+            <a href="https://github.com/AyakaYasuda">
+              <GitHubIcon sx={{ color: '#FFFFFF', fontSize: 22 }} />
+            </a>
           </li>
           <li className="Hover">
-            <LinkedInIcon sx={{ color: '#FFFFFF', fontSize: 22 }} />
+            <a href="https://www.linkedin.com/in/ayaka-yasuda-7ab597197">
+              <LinkedInIcon sx={{ color: '#FFFFFF', fontSize: 22 }} />
+            </a>
           </li>
         </ul>
         <ul className="FlexCenter gap-3 justify-self-end">
