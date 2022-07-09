@@ -19,7 +19,7 @@ const Works = ({ data }) => {
       className={`${classes.bgHalf} py-10 lg:py-20 px-5 h-full md:px-10 lg:px-20`}
     >
       <h3 className="text-brown text-center mb-8 md:mb-16">
-        Things I've been working on
+        Things I have been working on
       </h3>
       <div id="projectsWindow" className="h-[92%] md:h-[90%] overflow-y-auto">
         {data.map((work, index) => (

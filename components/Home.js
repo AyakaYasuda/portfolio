@@ -23,7 +23,7 @@ const Home = ({ data }) => {
           </div>
         </div>
         <h5 className="absolute z-20 bottom-10 right-1/2 translate-x-1/2 text-white text-center w-max md:bottom-16">
-          Check out what I've been working on
+          Check out what I have been working on
         </h5>
         <ScrollButton
           className="absolute z-20 right-1/2 translate-x-1/2 -bottom-5"
