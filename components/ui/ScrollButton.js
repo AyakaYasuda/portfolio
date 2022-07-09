@@ -4,6 +4,7 @@ import { Link as Scroll } from 'react-scroll';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
 const ScrollButton = ({ className, path, offSet, onClick }) => {
+  console.log(path)
   return (
     <Scroll
       to={path ? path : ""}
