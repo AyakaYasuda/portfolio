@@ -3,7 +3,7 @@ import BackgroundBox from './BackgroundBox';
 
 const ProfileImage = ({image}) => {
   return (
-    <section className="relative mx-16 md:my-10 h-[48vw]">
+    <section className="relative mx-16 md:my-10 h-[48vw] md:h-[730px]">
       <BackgroundBox
         bgColor="bg-pink-light"
         width="w-10/12 md:w-4/5"

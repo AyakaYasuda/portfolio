@@ -5,8 +5,8 @@ import DownloadIcon from '@mui/icons-material/Download';
 
 const DesktopMenu = () => {
   return (
-    <nav>
-      <ul className="GridCenter grid-cols-5 gap-2 bg-green-dark py-3 px-32 lg:grid-cols-7">
+    <nav className="bg-green-dark py-3 px-32">
+      <ul className="GridCenter grid-cols-5 gap-2 max-w-screen-xl mx-auto lg:grid-cols-7">
         <li className="NavLink lg:col-start-2">
           <Scroll to="home" smooth={true} duration={600} offset={-135}>
             HOME

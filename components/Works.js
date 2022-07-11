@@ -27,7 +27,7 @@ const Works = ({ data }) => {
       <h3 className="text-brown text-center mb-8 md:mb-16">
         Things I have been working on
       </h3>
-      <div id="projectsWindow" className="h-[92%] md:h-[92%] overflow-y-auto">
+      <div id="projectsWindow" className="h-[92%] md:h-[92%] overflow-y-auto max-w-screen-lg mx-auto">
         {data.map((work, index) => (
           <div
             id={`project-${work.id}`}

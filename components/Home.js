@@ -7,7 +7,7 @@ const Home = ({ data }) => {
   return (
     <div
       id="home"
-      className="relative z-0 w-full h-2/4 md:h-[60vw] md:GridCenter md:grid-cols-2"
+      className="relative z-0 w-full h-2/4 md:h-[85vh] md:max-h-[85vh] md:GridCenter md:grid-cols-2 md:overflow-y-hidden"
     >
       <img
         src={data.topImage}
