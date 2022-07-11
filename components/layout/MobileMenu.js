@@ -26,7 +26,7 @@ const MobileMenu = ({ drawerState, onToggle }) => {
             MENU
           </li>
           <li className="NavLink col-start-7 FlexCenter gap-1 lg:col-start-8">
-            <a href="https://drive.google.com/uc?export=download&id=1oN6kXK481tLFx1qTtgyyoZP4fy0PC2_1" download>
+            <a href="https://drive.google.com/uc?export=download&id=1QNzBvobAsr0jd0uMPA0sDuGAUjl_jsiA" download>
               RESUME
             </a>
             <DownloadIcon sx={{ color: '#FFFFFF', fontSize: 18 }} />
