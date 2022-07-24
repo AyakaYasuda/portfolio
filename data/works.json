@@ -11,12 +11,12 @@
       "Redux-Toolkit",
       "TypeScript",
       "TailwindCSS",
-      "Figma",
       "AWS lambda",
       "AWS API Gateway",
       "AWS DynamoDB",
+      "Serverless Framework",
       "Swagger",
-      "Serverless Framework"
+      "Figma"
     ]
   },
   {
