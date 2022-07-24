@@ -4,7 +4,7 @@ import { Link as Scroll } from 'react-scroll';
 const DrawerMenu = () => {
   return (
     <nav>
-      <ul className="GridCenter grid-cols-4 gap-2 bg-green-light opacity-90 py-3 px-16">
+      <ul className="GridCenter grid-cols-4 gap-2 bg-green-light opacity-90 py-3 px-8">
         <li className="NavLink text-brown">
           <Scroll to="home" smooth={true} duration={600} offset={-135}>
             HOME

@@ -11,10 +11,14 @@ const MobileMenu = ({ drawerState, onToggle }) => {
       <nav className="GridCenter grid-cols-2 bg-green-dark py-2 px-5">
         <ul className="FlexJustifyStart gap-2 justify-self-start">
           <li className="Hover">
-            <GitHubIcon sx={{ color: '#FFFFFF', fontSize: 22 }} />
+            <a href="https://github.com/AyakaYasuda">
+              <GitHubIcon sx={{ color: '#FFFFFF', fontSize: 22 }} />
+            </a>
           </li>
           <li className="Hover">
-            <LinkedInIcon sx={{ color: '#FFFFFF', fontSize: 22 }} />
+            <a href="https://www.linkedin.com/in/ayaka-yasuda-7ab597197">
+              <LinkedInIcon sx={{ color: '#FFFFFF', fontSize: 22 }} />
+            </a>
           </li>
         </ul>
         <ul className="FlexCenter gap-3 justify-self-end">
@@ -22,7 +26,7 @@ const MobileMenu = ({ drawerState, onToggle }) => {
             MENU
           </li>
           <li className="NavLink col-start-7 FlexCenter gap-1 lg:col-start-8">
-            <a href="../../assets/resume/resume-ayakayasuda.pdf" download>
+            <a href="https://drive.google.com/uc?export=download&id=1QNzBvobAsr0jd0uMPA0sDuGAUjl_jsiA" download>
               RESUME
             </a>
             <DownloadIcon sx={{ color: '#FFFFFF', fontSize: 18 }} />

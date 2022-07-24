@@ -36,7 +36,7 @@ const Layout = ({ children }) => {
   const desktopHeader = (
     <>
       <header className="GridCenter grid-cols-3 bg-blue-light px-10 py-2">
-        <ul className="FlexJustifyStart gap-2 justify-self-start">
+        <ul className="FlexJustifyStart gap-2 justify-self-start max-w-screen-xl mx-auto">
           <li className="Hover">
             <a
               href="https://github.com/AyakaYasuda"

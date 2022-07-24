@@ -7,7 +7,7 @@ const Home = ({ data }) => {
   return (
     <div
       id="home"
-      className="relative z-0 w-full h-2/4 md:h-[60vw] md:GridCenter md:grid-cols-2"
+      className="relative z-0 w-full h-2/4 md:h-[85vh] md:max-h-[85vh] md:GridCenter md:grid-cols-2 md:overflow-y-hidden"
     >
       <img
         src={data.topImage}
@@ -26,9 +26,9 @@ const Home = ({ data }) => {
           Check out what I have been working on
         </h5>
         <ScrollButton
-          className="absolute z-20 right-1/2 translate-x-1/2 -bottom-5"
           path="works"
-          offSet={-130}
+          className="absolute z-20 right-1/2 translate-x-1/2 -bottom-5"
+          offSet={-120}
         />
       </section>
     </div>
