@@ -4,10 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.text-tiny {
-  fontsize: '.875rem';
-}
-
 @layer base {
   main {
     @apply font-popping box-border;
@@ -30,11 +26,11 @@
   }
 
   h5 {
-    @apply font-popping font-semibold text-tiny md:text-base lg:text-lg tracking-wider;
+    @apply font-popping font-semibold text-sm md:text-base lg:text-lg tracking-wider;
   }
 
   p {
-    @apply font-popping text-tiny md:text-base;
+    @apply font-popping text-sm md:text-base;
   }
 
   small {
@@ -69,7 +65,7 @@
     @apply grid justify-items-center items-center;
   }
   .NavLink {
-    @apply font-popping font-semibold text-sm md:text-tiny lg:text-base text-white tracking-wider transform hover:-translate-y-1 duration-300 hover:drop-shadow cursor-pointer;
+    @apply font-popping font-semibold text-sm md:text-sm lg:text-base text-white tracking-wider transform hover:-translate-y-1 duration-300 hover:drop-shadow cursor-pointer;
   }
   .Hover {
     @apply cursor-pointer transform hover:-translate-y-1 duration-300;

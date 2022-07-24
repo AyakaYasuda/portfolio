@@ -31,7 +31,7 @@
     {
       "id": 3,
       "category": "Databases",
-      "skills": ["PostgreSQL", "MongoDB", "AWS DynamoDB"]
+      "skills": ["PostgreSQL", "MySQL", "MongoDB", "AWS DynamoDB"]
     },
     {
       "id": 4,
@@ -43,6 +43,7 @@
         "Heroku",
         "Git",
         "GitHub",
+        "GitHub Actions",
         "Bitbucket"
       ]
     }
