@@ -19,7 +19,7 @@ const ProfileImage = ({image}) => {
       <img
         src={image}
         alt="profile image"
-        className="absolute rounded drop-shadow-md object-cover w-1/2 md:w-4/5 z-20 h-auto right-0 top-0 md:top-16 md:right-1/2 md:translate-x-1/2"
+        className="absolute object-cover w-1/2 md:w-4/5 z-20 h-auto right-0 top-0 md:top-16 md:right-1/2 md:translate-x-1/2"
       />
     </section>
   );
