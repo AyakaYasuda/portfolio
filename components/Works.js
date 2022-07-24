@@ -7,11 +7,10 @@ import ScrollButton from './ui/ScrollButton';
 const scrollToNext = (id) => {
   const element = document.getElementById('projectsWindow');
   const nextElement = document.getElementById(`project-${id + 1}`);
-  const rect = nextElement.getBoundingClientRect();
-  const position = rect.top;
-  console.log(position);
+  const elPosition = element.getBoundingClientRect().top;
+  const position = nextElement.getBoundingClientRect().top;
 
-  element.scrollBy(0, position);
+  element.scrollBy(0, position - elPosition);
 };
 
 const Works = ({ data }) => {
@@ -27,7 +26,10 @@ const Works = ({ data }) => {
       <h3 className="text-brown text-center mb-8 md:mb-16">
         Things I have been working on
       </h3>
-      <div id="projectsWindow" className="h-[92%] md:h-[92%] overflow-y-auto max-w-screen-lg mx-auto">
+      <div
+        id="projectsWindow"
+        className="h-[92%] md:h-[92%] overflow-y-auto max-w-screen-lg mx-auto"
+      >
         {data.map((work, index) => (
           <div
             id={`project-${work.id}`}
@@ -44,7 +46,7 @@ const Works = ({ data }) => {
               technologies={work.technologies}
             />
             {index !== data.length - 1 && (
-              <div className="FlexColumn gap-5 my-8">
+              <div className="FlexColumn gap-5 my-6">
                 <h5 className="text-brown">Next Project</h5>
                 <ScrollButton onClick={() => scrollHandler(work.id)} />
               </div>
