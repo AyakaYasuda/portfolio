@@ -29,7 +29,7 @@ const DesktopMenu = () => {
         </li>
         <li className="NavLink FlexCenter gap-1 lg:col-start-6">
           <a
-            href="https://drive.google.com/uc?export=download&1kCn__2QkSfMs2St_aEJk83plAlOCuNEM"
+            href="https://drive.google.com/uc?export=download&id=1kCn__2QkSfMs2St_aEJk83plAlOCuNEM"
             download
           >
             RESUME
