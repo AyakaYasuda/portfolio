@@ -6,7 +6,7 @@ import Copyright from './ui/Copyright';
 
 const Contact = ({ data }) => {
   return (
-    <section id="contact" className={`${classes.bgHalf} px-5 pt-10 md:px-20`}>
+    <section id="contact" className={`${classes.bgHalf} px-5 pt-20 md:px-20`}>
       <ContactCard
         message={data.message}
         phone={data.phone}

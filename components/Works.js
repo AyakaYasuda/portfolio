@@ -28,7 +28,7 @@ const Works = ({ data }) => {
       </h3>
       <div
         id="projectsWindow"
-        className="h-[92%] md:h-[92%] overflow-y-auto max-w-screen-xl mx-auto"
+        className="h-[92%] md:h-[78%] overflow-y-auto max-w-screen-xl mx-auto"
       >
         {data.map((work, index) => (
           <div
@@ -46,7 +46,7 @@ const Works = ({ data }) => {
               technologies={work.technologies}
             />
             {index !== data.length - 1 && (
-              <div className="FlexColumn gap-5 my-6">
+              <div className="FlexColumn gap-5 my-8">
                 <h5 className="text-brown">Next Project</h5>
                 <ScrollButton onClick={() => scrollHandler(work.id)} />
               </div>

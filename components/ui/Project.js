@@ -47,7 +47,7 @@ const Project = ({
       <div className="hover:scale-105 hover:duration-300 absolute z-10">
         <ProjectImage image={projectImage} />
       </div>
-      <section className="FlexColumn items-end min-h-[33vw]">
+      <section className="FlexColumn items-end min-h-[460px]">
         <div className="mb-5">
           <h5 className="text-white text-right">
             {`Project - ${('0' + id).slice(-2)}`}
