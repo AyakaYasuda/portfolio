@@ -44,7 +44,7 @@ const Project = ({
 
   const desktopContent = (
     <div className="w-full relative px-3">
-      <div className="hover:scale-105 hover:duration-300 drop-shadow-md absolute z-10">
+      <div className="hover:scale-105 hover:duration-300 absolute z-10">
         <ProjectImage image={projectImage} />
       </div>
       <section className="FlexColumn items-end min-h-[33vw]">
