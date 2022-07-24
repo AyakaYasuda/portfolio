@@ -3,9 +3,9 @@
     "id": 1,
     "url": "https://juno-wedding.vercel.app",
     "github": "https://github.com/AyakaYasuda/juno",
-    "projectImage": "/images/JunoImage.png", 
+    "projectImage": "/images/JunoImage.png",
     "name": "Juno",
-    "description": "Full-stack app that allows users to create wedding invitations and manage RSVPs aiming to effortless organizing the event. One of the most challenging parts on this project was designing the database prior to beginning the project and building the serverless architecture utilizing AWS services.",
+    "description": "This is a full-stack app that allows couples to create wedding invitations and manage RSVPs aiming to effortless organizing the event. One of the most challenging parts on this project was designing the database prior to beginning the project and building the serverless architecture utilizing AWS services.",
     "technologies": [
       "React",
       "Redux-Toolkit",
@@ -21,9 +21,49 @@
   },
   {
     "id": 2,
+    "url": "https://kakeibo-a9b29.web.app/",
+    "github": "https://github.com/AyakaYasuda/kakeibo",
+    "projectImage": "/images/KakeiboImage.png",
+    "name": "Kakeibo",
+    "description": "This is an expense tracker app that offers a dashboard where expenses are categorized and visualized in a pie chart. Users can create their personal monthly budget and make sure if they're on the track to save some money or not. One of the major aims of this project was to deploy a MERN stack app and learn more about how each stack works in a practical way.",
+    "technologies": [
+      "React",
+      "Redux",
+      "Sass",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Mongoose",
+      "Firebase",
+      "Heroku"
+    ]
+  },
+  {
+    "id": 3,
+    "url": "https://filmbase-5265d.web.app/",
+    "github": "https://github.com/AyakaYasuda/filmbase-frontend",
+    "projectImage": "/images/FilmbaseImage.png",
+    "name": "Filmbase",
+    "description": "This is a movie platform app where you can browse popular movies, save your favorite movies and share reviews with other users. The data is provided by The Movie Database API and it updates daily, so you can follow what's new in theaters right now. Knowing that React Query would be the best choice to manage server state in React apps, I decided to introduce it into my project instead of writing reducers and logic with thunks.",
+    "technologies": [
+      "React",
+      "React Query",
+      "Redux Toolkit",
+      "Sass",
+      "Node.js",
+      "Express",
+      "PostgreSQL",
+      "Passport",
+      "Firebase",
+      "Heroku",
+      "Github Actions"
+    ]
+  },
+  {
+    "id": 4,
     "url": "https://midpj-flashcard-app.herokuapp.com",
     "github": "https://github.com/AyakaYasuda/flash",
-    "projectImage": "/images/FlashImage.png", 
+    "projectImage": "/images/FlashImage.png",
     "name": "Flash",
     "description": "This app promotes studying by helping users memorize new words. On this project, I aimed to deep-understand how to work with React Hooks such as State Hook and Effect Hook, and also Context API so that I would feel comfortable in managing state in the app.",
     "technologies": [
