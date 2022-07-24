@@ -28,7 +28,7 @@ const Works = ({ data }) => {
       </h3>
       <div
         id="projectsWindow"
-        className="h-[92%] md:h-[92%] overflow-y-auto max-w-screen-lg mx-auto"
+        className="h-[92%] md:h-[92%] overflow-y-auto max-w-screen-xl mx-auto"
       >
         {data.map((work, index) => (
           <div
