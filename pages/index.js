@@ -14,14 +14,14 @@ const HomePage = (props) => {
   return (
     <>
       <Head>
-        <title>Ayaka Yasuda | Software Developer in Vancouver</title>
+        <title>Ayaka Yasuda | Software Engineer in Vancouver</title>
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"
         />
         <meta
           name="description"
-          content="Ayaka Yasuda is a software developer who specializes in developing web applications with React and Node.js. Based in Vancouver."
+          content="Ayaka Yasuda is a software engineer who specializes in developing web applications with React and Node.js. Based in Vancouver."
         />
       </Head>
       <Home data={props.home} />

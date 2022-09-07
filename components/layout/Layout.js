@@ -24,7 +24,7 @@ const Layout = ({ children }) => {
         onClick={closeDrawerHandler}
       >
         <h1 className="text-orange">Ayaka Yasuda</h1>
-        <h5 className="text-orange font-normal">Software Developer</h5>
+        <h5 className="text-orange font-normal">Software Engineer</h5>
       </header>
       <MobileMenu
         drawerState={isDrawerMenuOpen}
@@ -58,7 +58,7 @@ const Layout = ({ children }) => {
         </ul>
         <div className="FlexColumn">
           <h1 className="text-orange">Ayaka Yasuda</h1>
-          <h5 className="text-orange font-normal">Software Developer</h5>
+          <h5 className="text-orange font-normal">Software Engineer</h5>
         </div>
       </header>
       <DesktopMenu />
